@@ -1,13 +1,22 @@
 ---
-layout: post
-title: Jekyll Test Post
-date:   2020-06-30 11:57 +0900
-categories: git
+layout: single
+title: Jekyll Test 업로드(수정)
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+categories: - Jekyll
+last_modified_at: '2020-07-01 14:16:00 +0800'
+toc: true
+toc_sticky: true
+toc_label: 목차
 ---
-
-# Blog First Post
- 
+## Blog First Post 
 jekyll 포스트 업로드 test를 위해 생성한 글입니다.
+ 
+## 목차 설정 Test
+목차 테스트입니다
  
 ## 참고 목록
 - [Jekyll을 이용해 GitHub에 블로그 만들기 (1)](https://jetalog.net/86)
