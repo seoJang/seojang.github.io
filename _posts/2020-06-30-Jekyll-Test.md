@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Jekyll Test 업로드(수정)
+title: Jekyll Test
 author_profile: true
 read_time: true
 comments: true
