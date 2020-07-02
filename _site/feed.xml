@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-01T16:05:18+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer blog</title><subtitle>개발 공부하는 블로그</subtitle><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><entry><title type="html">Jekyll Test</title><link href="http://localhost:4000/jekyll/Jekyll-Test/" rel="alternate" type="text/html" title="Jekyll Test" /><published>2020-06-30T00:00:00+09:00</published><updated>2020-07-01T15:16:00+09:00</updated><id>http://localhost:4000/jekyll/Jekyll-Test</id><content type="html" xml:base="http://localhost:4000/jekyll/Jekyll-Test/">&lt;h2 id=&quot;blog-first-post&quot;&gt;Blog First Post&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-02T17:04:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer blog</title><subtitle>개발 공부하는 블로그</subtitle><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><entry><title type="html">BaeckJoon 단계별문제풀이_2557 Hello World</title><link href="http://localhost:4000/baeckjoon/algorithm/AlBJstep01/" rel="alternate" type="text/html" title="BaeckJoon 단계별문제풀이_2557 Hello World" /><published>2020-07-02T00:00:00+09:00</published><updated>2020-07-02T15:16:00+09:00</updated><id>http://localhost:4000/baeckjoon/algorithm/AlBJstep01</id><content type="html" xml:base="http://localhost:4000/baeckjoon/algorithm/AlBJstep01/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기&quot;&gt;백준 알고리즘 _단계별로 풀어보기&lt;/h2&gt;
+&lt;h3 id=&quot;입출력과-사칙연산&quot;&gt;입출력과 사칙연산&lt;/h3&gt;
+&lt;h4 id=&quot;--2557-문제&quot;&gt;- 2557 문제&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86330567-cf6cb600-bc82-11ea-88cf-a39d88cda742.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;--풀이&quot;&gt;- 풀이&lt;/h4&gt;
+&lt;p&gt;Hello World! 를 출력하기&lt;/p&gt;
+
+&lt;h4 id=&quot;--코드&quot;&gt;- 코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86331674-5c643f00-bc84-11ea-9a50-5b444da2e8fb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기 입출력과 사칙연산 - 2557 문제</summary></entry><entry><title type="html">Jekyll Test</title><link href="http://localhost:4000/jekyll/Jekyll-Test/" rel="alternate" type="text/html" title="Jekyll Test" /><published>2020-06-30T00:00:00+09:00</published><updated>2020-07-01T15:16:00+09:00</updated><id>http://localhost:4000/jekyll/Jekyll-Test</id><content type="html" xml:base="http://localhost:4000/jekyll/Jekyll-Test/">&lt;h2 id=&quot;blog-first-post&quot;&gt;Blog First Post&lt;/h2&gt;
 &lt;p&gt;jekyll 포스트 업로드 test를 위해 생성한 글입니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;목차-설정-test&quot;&gt;목차 설정 Test&lt;/h2&gt;
