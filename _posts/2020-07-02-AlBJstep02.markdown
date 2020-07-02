@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "BaeckJoon 단계별문제풀이_10718 Hello World"
+title: "BaeckJoon 단계별문제풀이_10718 We love kriii"
 read_time: true
 
 categories: 
