@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "BaeckJoon 단계별_ IF문 단계 1330, 9498, 2753, 14681, 2884"
+title: "BaeckJoon 단계별_ IF문 1330, 9498, 2753, 14681, 2884"
 read_time: true
 categories: 
  - BaeckJoon 
@@ -13,7 +13,7 @@ toc_sticky: true
 toc_label: 목차
 ---
 ## 백준 알고리즘 _단계별로 풀어보기
-### if문 단계
+### if문
 ### - 1330 두 수 비교하기 문제
 ![image](https://user-images.githubusercontent.com/66898243/86426042-a4856f00-bd21-11ea-9996-2c459651eb9b.png)
 
