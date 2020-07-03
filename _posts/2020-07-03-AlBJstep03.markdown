@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "BaeckJoon 단계별문제풀이 10171, 10172, 1000, 1001, 10998, 1008, 10869, 10430, 2588 
+title: "BaeckJoon 단계별문제풀이 10171, 10172, 1000, 1001, 10998, 1008, 10869, 10430, 2588"
 read_time: true
 categories: 
  - BaeckJoon 
@@ -63,7 +63,7 @@ toc_label: 목차
 코드
 >  ![image](https://user-images.githubusercontent.com/66898243/86420928-130f0080-bd13-11ea-91cc-7cdd5a0fd50d.png)
 
-#### - 2588 곱셈문제
+#### - 2588 곱셈 문제
 ![image](https://user-images.githubusercontent.com/66898243/86419965-e7d6e200-bd0f-11ea-999d-19e569107eae.png)
 
 코드
