@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "BaeckJoon 단계별문제풀이_2557 Hello World"
+title: "BaeckJoon 단계별_ 입출력과 사칙연산 2557 Hello World"
 read_time: true
 
 categories: 
  - BaeckJoon 
- - Algorithm
 tags: 
  - Algorithm
  - BaeckJoon 
@@ -21,10 +20,10 @@ toc_label: 목차
 ![image](https://user-images.githubusercontent.com/66898243/86330567-cf6cb600-bc82-11ea-88cf-a39d88cda742.png)
 
 
-#### - 풀이 
+### 풀이 
 Hello World! 를 출력하기
 
-#### - 코드
+### 코드
 >  ![image](https://user-images.githubusercontent.com/66898243/86331674-5c643f00-bc84-11ea-9a50-5b444da2e8fb.png)
  
 #### - 참고 목록
