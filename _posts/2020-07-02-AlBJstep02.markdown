@@ -3,7 +3,8 @@ layout: single
 title: "BaeckJoon 단계별문제풀이_10718 We love kriii"
 read_time: true
 categories: 
-@@ -9,23 +9,67 @@ categories:
+ - BaeckJoon 
+ - Algorithm
 tags: 
  - Algorithm
  - BaeckJoon 
