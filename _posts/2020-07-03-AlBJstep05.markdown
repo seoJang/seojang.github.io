@@ -7,7 +7,7 @@ categories:
 tags: 
  - Algorithm
  - BaeckJoon 
-last_modified_at: '2020-07-03 17:21:00 +0800'
+last_modified_at: '2020-07-06 09:08:00 +0800'
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -44,10 +44,10 @@ toc_label: 목차
 #### 코드1. BufferedReader-System.out 사용 : 시간초과(Scanner &System.out.println 사용시 시간초과)
 >  ![image](https://user-images.githubusercontent.com/66898243/86508539-cbc06700-be1b-11ea-92f9-f388b45faab8.png)
 
-#### 코드1. BufferedReader, split()-BufferedWriter 사용. 1024ms
+#### 코드2. BufferedReader, split()-BufferedWriter 사용. 1024ms
 >  ![image](https://user-images.githubusercontent.com/66898243/86508566-ef83ad00-be1b-11ea-9ddb-04a93168724b.png)
 
-#### 코드1 BufferedReader, StringTokeniser, BufferedWriter 사용. 744ms
+#### 코드3. BufferedReader, StringTokeniser, BufferedWriter 사용. 744ms
 >  ![image](https://user-images.githubusercontent.com/66898243/86508582-22c63c00-be1c-11ea-9af0-9655774c869c.png)
 
 ***
@@ -82,7 +82,7 @@ toc_label: 목차
 ### - 2438 별 찍기- 1 문제
 ![image](https://user-images.githubusercontent.com/66898243/86444665-0d81dc80-bd4c-11ea-977c-c1551eaa7194.png)
 
-#### 코드 1 (Scanner)
+#### 코드 
 > ![image](https://user-images.githubusercontent.com/66898243/86525911-126b9b00-bec8-11ea-93b4-deca5b402009.png)
 
 ***
@@ -96,8 +96,8 @@ toc_label: 목차
 ### - 10871 X보다 작은 수 문제
 ![image](https://user-images.githubusercontent.com/66898243/86448723-1fff1480-bd52-11ea-9905-9776b291a2af.png)
 
-#### 코드 1 (Scanner)
->  
+#### 코드 
+>  ![image](https://user-images.githubusercontent.com/66898243/86545163-f6b7d180-bf67-11ea-8000-f47284aa2815.png)
 
 #### - 참고 목록
 - https://www.acmicpc.net/problem/2557
