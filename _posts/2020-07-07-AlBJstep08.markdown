@@ -7,7 +7,7 @@ categories:
 tags: 
  - Algorithm
  - BaeckJoon 
-last_modified_at: '2020-07-07 13:21:00 +0800'
+last_modified_at: '2020-07-08 17:21:00 +0800'
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -68,7 +68,7 @@ toc_label: 목차
 ![image](https://user-images.githubusercontent.com/66898243/86719830-66f54e80-c05f-11ea-9085-84b26e7146d2.png)
 
 #### 코드
->  
+>  ![image](https://user-images.githubusercontent.com/66898243/86990511-b5c5f400-c1d7-11ea-837c-23fc71347d60.png)
 
 #### - 참고 목록
 - https://www.acmicpc.net/problem/2557
