@@ -22,10 +22,13 @@ toc_label: 목차
 
 ***
 ### - 4673 셀프 넘버 문제
+![image](https://user-images.githubusercontent.com/66898243/87018418-2be44e00-c20c-11ea-9174-b2d0353a291d.png)
 
+#### 코드1. 배열 10001개
+>  ![image](https://user-images.githubusercontent.com/66898243/87008372-99897d80-c1fe-11ea-823e-0bdae86c3757.png)
 
-#### 코드
->  
+#### 코드2. 배열 10000개
+>  ![image](https://user-images.githubusercontent.com/66898243/87018008-a8c2f800-c20b-11ea-889e-fff43647ccc4.png)
 
 ***
 ### - 1065 한수 문제
