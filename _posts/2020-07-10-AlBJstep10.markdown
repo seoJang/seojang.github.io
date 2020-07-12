@@ -7,7 +7,7 @@ categories:
 tags: 
  - Algorithm
  - BaeckJoon 
-last_modified_at: '2020-07-11 23:11:00 +0800'
+last_modified_at: '2020-07-12 23:11:00 +0800'
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -55,6 +55,12 @@ toc_label: 목차
 
 #### 코드1 시간초과
 >  ![image](https://user-images.githubusercontent.com/66898243/87226229-5a5d5700-c3cd-11ea-8720-7936654ab983.png)
+
+#### 코드2 아스키 코드 208ms
+>  ![image](https://user-images.githubusercontent.com/66898243/87248550-f605ca80-c494-11ea-9a1e-2c88c9a41985.png)
+
+#### 코드3 아스키 코드 + System.in.read() 116ms
+>  ![image](https://user-images.githubusercontent.com/66898243/87248576-19c91080-c495-11ea-9d64-05f494a0ff99.png)
 
 ***
 ### - 1152 단어의 개수 문제
