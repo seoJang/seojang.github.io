@@ -97,8 +97,11 @@ toc_label: 목차
 ### - 1316 그룹 단어 체커 문제
 ![image](https://user-images.githubusercontent.com/66898243/87116278-5556b580-c2b0-11ea-99fb-3d4266bab3eb.png)
 
-#### 코드
->  
+#### 코드1 이클립스에서는 실행되나 실패
+>  ![image](https://user-images.githubusercontent.com/66898243/87876925-265de380-ca16-11ea-92f8-ed64d58c5a5f.png)
+
+#### 코드2 80ms
+> ![image](https://user-images.githubusercontent.com/66898243/87876945-47becf80-ca16-11ea-8af4-5d30d245ce6b.png)
 
 #### - 참고 목록
 - https://www.acmicpc.net/problem/2557
