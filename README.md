@@ -2,18 +2,18 @@
 
 
 ## Coding Test
-### 백준 https://www.acmicpc.net/
+### [BAEKJOON](https://www.acmicpc.net/)
 ### Prigranners 
 
 
 ## 참고 
 
 ### BOOK
-1. 실용주의 프로그래머 http://www.yes24.com/Product/Goods/12501565
-3. 알고리즘 문제 해결 전략 세트 http://www.yes24.com/Product/Goods/8006522
+1. [실용주의 프로그래머](http://www.yes24.com/Product/Goods/12501565)
+3. [알고리즘 문제 해결 전략 세트](http://www.yes24.com/Product/Goods/8006522)
 
 ### youtube
-1. 한국인을 위한 안드로이드 스튜디오 코틀린 백과사전 https://www.youtube.com/watch?v=WlJszSmK_es
+1. [한국인을 위한 안드로이드 스튜디오 코틀린 백과사전](https://www.youtube.com/watch?v=WlJszSmK_es)
 
 ### inflearn
 
