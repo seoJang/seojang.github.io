@@ -1,19 +1,19 @@
 # seoJang githup.io 블로그
 
-## 알고리즘 
 
-### Baekjoon 알고리즘 문제
-
-1. [2020.06.30 ~ : 2020.09.00] 단계별 풀어보기 
-
-
-### Prigranners 알고리즘 문제
-
-1. [2020.09.00 ~ : ~] 
+## Coding Test
+### 백준 https://www.acmicpc.net/
+### Prigranners 
 
 
+## 참고 
 
-## 개념 강의 
+## BOOK
+1. 실용주의 프로그래머 http://www.yes24.com/Product/Goods/12501565
+3. 알고리즘 문제 해결 전략 세트 http://www.yes24.com/Product/Goods/8006522
+
+### youtube
+1. 한국인을 위한 안드로이드 스튜디오 코틀린 백과사전 https://www.youtube.com/watch?v=WlJszSmK_es
 
 ### inflearn
 
@@ -21,7 +21,5 @@
 
 2. [Java로 배우는 자료구조](https://www.inflearn.com/course/java-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/dashboard)
 
-### Prigranners 
 
-1. 미정
 
