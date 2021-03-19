@@ -8,7 +8,7 @@
 
 ## 참고 
 
-## BOOK
+### BOOK
 1. 실용주의 프로그래머 http://www.yes24.com/Product/Goods/12501565
 3. 알고리즘 문제 해결 전략 세트 http://www.yes24.com/Product/Goods/8006522
 
