@@ -21,26 +21,26 @@ toc_label: 목차
 이를 개선하기 위해 역할에 따라 코드를 분리시켜 관리하는 프레임워크 패턴이 사용되게 됩니다.
 
 ### MVC 패턴 :  Model + View + Controller
-> Model 
-> 프로그램에서 사용되는 데이터와 데이터를 처리하는 부분. 
-> View
-> 사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면.
-> Controller
-> 사용자의 입력을 받고 처리하는 부분.
+> Model    
+> 프로그램에서 사용되는 데이터와 데이터를 처리하는 부분.    
+> View   
+> 사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면.   
+> Controller   
+> 사용자의 입력을 받고 처리하는 부분.      
 ![image](https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png)
-> 1. 사용자가 입력 
-> 2. Controller에서 사용자의 입력을 확인하고 Model 업데이트
-> 3. Controller에서 Model을 나타낼 View를 선택
+> 1. 사용자가 입력    
+> 2. Controller에서 사용자의 입력을 확인하고 Model 업데이트   
+> 3. Controller에서 Model을 나타낼 View를 선택   
 > 4. View는 Model을 이용하여 화면 출력
 
 -----
 ### MVP 패턴 :  Model + View + Presenter
-> Model 
-> 프로그램에서 사용되는 데이터와 데이터를 처리하는 부분. 
-> View
-> 사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면.
-> Presenter 
-> View에서 요청한 정보를 Model로부터 가공해서 View로 전달하는 부분
+> Model    
+> 프로그램에서 사용되는 데이터와 데이터를 처리하는 부분.    
+> View   
+> 사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면.   
+> Presenter    
+> View에서 요청한 정보를 Model로부터 가공해서 View로 전달하는 부분   
 ![image](https://user-images.githubusercontent.com/66898243/112163971-db454180-8c30-11eb-82d1-1f5cbabdd165.png)
 > 1. 사용자가 입력
 > 2. View에서 Presenter에게 데이터를 요청
