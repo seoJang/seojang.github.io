@@ -2,7 +2,7 @@
 layout: single
 title: "MVC, MVP, MVVM 디자인 패턴 비교"
 read_time: true
-
+last_modified_at: '2021-03-15 23:36:00 +0800'
 categories: 
  - etc
 tags: 
