@@ -10,7 +10,7 @@ tags:
  - mvc
  - mvp
  - mvvm
-last_modified_at: '2021-03-23 23:36:00 +0800'
+last_modified_at: '2021-03-25 20:41:00 +0800'
 toc: true
 toc_sticky: true
 toc_label: 목차
