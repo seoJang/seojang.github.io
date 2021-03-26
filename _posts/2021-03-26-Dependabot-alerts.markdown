@@ -39,7 +39,9 @@ git blog repositories에 떠 있던 Dependabot alerts 해결하기
  3. Gemfile.lock 수정    
  Gemfile.lock 파일(설치된 젬들의 버전을 기억해 두는 파일)에서 rack 버전을 수정
  
-=> alerts 가 해결됐다
+ 
+ 
+ 
  
  
 ## 참고 목록
