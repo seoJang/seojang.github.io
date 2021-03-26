@@ -1,198 +1,626 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-03T15:45:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer blog</title><subtitle>개발 공부하는 블로그</subtitle><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><entry><title type="html">BaeckJoon 단계별_ IF문 단계 1330, 9498, 2753, 14681, 2884</title><link href="http://localhost:4000/baeckjoon/AlBJstep04/" rel="alternate" type="text/html" title="BaeckJoon 단계별_ IF문 단계 1330, 9498, 2753, 14681, 2884" /><published>2020-07-03T00:00:00+09:00</published><updated>2020-07-03T16:21:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep04</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep04/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기&quot;&gt;백준 알고리즘 _단계별로 풀어보기&lt;/h2&gt;
-&lt;h3 id=&quot;if문-단계&quot;&gt;if문 단계&lt;/h3&gt;
-&lt;h3 id=&quot;--1330-두-수-비교하기-문제&quot;&gt;- 1330 두 수 비교하기 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86426042-a4856f00-bd21-11ea-9996-2c459651eb9b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-26T14:53:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer blog</title><subtitle>개발 공부하는 블로그</subtitle><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><entry><title type="html">MVC, MVP, MVVM 디자인 패턴 비교</title><link href="http://localhost:4000/etc/DesignPattern/" rel="alternate" type="text/html" title="MVC, MVP, MVVM 디자인 패턴 비교" /><published>2021-03-23T00:00:00+09:00</published><updated>2021-03-16T00:36:00+09:00</updated><id>http://localhost:4000/etc/DesignPattern</id><content type="html" xml:base="http://localhost:4000/etc/DesignPattern/">&lt;h2 id=&quot;mvc-mvp-mvvm-디자인-패턴은-왜-필요한가&quot;&gt;MVC, MVP, MVVM 디자인 패턴은 왜 필요한가?&lt;/h2&gt;
+&lt;p&gt;프로그램의 크기가 점점 커짐에 따라 코드의 관리가 어렵고 유지보수와 개발효율이 떨어지게 되는데, 
+이를 개선하기 위해 역할에 따라 코드를 분리시켜 관리하는 프레임워크 패턴이 사용되게 됩니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;mvc-패턴---model--view--controller&quot;&gt;MVC 패턴 :  Model + View + Controller&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Model  &lt;br /&gt;
+프로그램에서 사용되는 데이터와 데이터를 처리하는 부분.  &lt;br /&gt;
+View &lt;br /&gt;
+사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면. &lt;br /&gt;
+Controller &lt;br /&gt;
+사용자의 입력을 받고 처리하는 부분.    &lt;br /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;사용자가 입력&lt;/li&gt;
+    &lt;li&gt;Controller에서 사용자의 입력을 확인하고 Model 업데이트&lt;/li&gt;
+    &lt;li&gt;Controller에서 Model을 나타낼 View를 선택&lt;/li&gt;
+    &lt;li&gt;View는 Model을 이용하여 화면 출력&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;mvp-패턴---model--view--presenter&quot;&gt;MVP 패턴 :  Model + View + Presenter&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Model  &lt;br /&gt;
+프로그램에서 사용되는 데이터와 데이터를 처리하는 부분.  &lt;br /&gt;
+View &lt;br /&gt;
+사용자에게 보여지는 UI 부분. 웹페이지나 모바일어플의 화면. &lt;br /&gt;
+Presenter  &lt;br /&gt;
+View에서 요청한 정보를 Model로부터 가공해서 View로 전달하는 부분 &lt;br /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/112163971-db454180-8c30-11eb-82d1-1f5cbabdd165.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;사용자가 입력&lt;/li&gt;
+    &lt;li&gt;View에서 Presenter에게 데이터를 요청&lt;/li&gt;
+    &lt;li&gt;Presenter에서 Model에게 데이터를 요청&lt;/li&gt;
+    &lt;li&gt;Model은 Presenter에게 데이터를 응답&lt;/li&gt;
+    &lt;li&gt;Presenter는 View에게 데이터를 응답&lt;/li&gt;
+    &lt;li&gt;View는 응답받은 데이터를 이용하여 화면 출력&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;mvvm-패턴---model--view--viewmodel&quot;&gt;MVVM 패턴 :  Model + View + ViewModel&lt;/h3&gt;
+
+&lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt;
+&lt;p&gt;https://magi82.github.io/android-mvc-mvp-mvvm/
+https://velog.io/@jojo_devstory/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4-MVVM%EC%9D%B4-%EB%AD%98%EA%B9%8C
+https://beomy.tistory.com/43
+https://jcchu.medium.com/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-mvc-mvp-mvvm-965e324742df
+https://www.thekpop.net/2020/03/design-pattern-04-mvc-mvp-mvvm-3.html&lt;/p&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="etc" /><category term="android" /><category term="mvc" /><category term="mvp" /><category term="mvvm" /><summary type="html">MVC, MVP, MVVM 디자인 패턴은 왜 필요한가? 프로그램의 크기가 점점 커짐에 따라 코드의 관리가 어렵고 유지보수와 개발효율이 떨어지게 되는데, 이를 개선하기 위해 역할에 따라 코드를 분리시켜 관리하는 프레임워크 패턴이 사용되게 됩니다.</summary></entry><entry><title type="html">The Pragmatic Programer _00</title><link href="http://localhost:4000/the%20pragmatic%20programer/ThPragmaticProgramer/" rel="alternate" type="text/html" title="The Pragmatic Programer _00" /><published>2021-03-16T00:00:00+09:00</published><updated>2021-03-17T00:36:00+09:00</updated><id>http://localhost:4000/the%20pragmatic%20programer/ThPragmaticProgramer</id><content type="html" xml:base="http://localhost:4000/the%20pragmatic%20programer/ThPragmaticProgramer/">&lt;h2 id=&quot;the-pragmatic-programer&quot;&gt;The Pragmatic Programer&lt;/h2&gt;
+&lt;p&gt;The Pragmatic Programer 리뷰&amp;amp;정리&lt;/p&gt;
+
+&lt;p&gt;2021.03.16 시작&lt;/p&gt;
+
+&lt;h2 id=&quot;서문&quot;&gt;서문&lt;/h2&gt;
+&lt;p&gt;실용주의 프로그래머 tip&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자신의 술에 관심과 애정을 가져라&lt;/li&gt;
+  &lt;li&gt;자신의 일에 대해 생각하면서 일하라 
+현재의 실천 방법에 대해 검토하는 일회성이 아닌 모든 개발 과정과 일상에서 지속적으로 자신의 일을 분석하고 비평해보는 것&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt;
+&lt;p&gt;실용주의 프로그래머 http://www.yes24.com/Product/Goods/12501565&lt;/p&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="The Pragmatic Programer" /><category term="The Pragmatic Programer" /><summary type="html">The Pragmatic Programer The Pragmatic Programer 리뷰&amp;amp;정리</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 재귀 10872, 10870, 2447, 11729</title><link href="http://localhost:4000/baeckjoon/AlBJstep13/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 재귀 10872, 10870, 2447, 11729" /><published>2020-08-01T00:00:00+09:00</published><updated>2020-07-30T00:11:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep13</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep13/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;재귀&quot;&gt;재귀&lt;/h3&gt;
+&lt;h3 id=&quot;--10872-팩토리얼&quot;&gt;- 10872 팩토리얼&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88813886-6d0cc400-d1f4-11ea-8a94-cbec79dc1049.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-단순반복문-80&quot;&gt;코드1 단순반복문 80&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88817644-beb74d80-d1f8-11ea-87cd-301b32d01c27.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-재귀반복문-76&quot;&gt;코드2 재귀반복문 76&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88818170-5e74db80-d1f9-11ea-9e70-c82bd8adc057.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드3-재귀함수-84&quot;&gt;코드3 재귀함수 84&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88818973-54071180-d1fa-11ea-9896-f26330bd3f9f.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--10870-피보나치-수-5&quot;&gt;- 10870 피보나치 수 5&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88813963-7eee6700-d1f4-11ea-86bc-5de6ffeeaf4c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86426333-5de44480-bd22-11ea-8f30-e5635dce8273.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/90314444-c55ef800-df4e-11ea-8fa7-c55ac9a2db4b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--9498-시험성적-문제&quot;&gt;- 9498 시험성적 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86426380-84a27b00-bd22-11ea-9aa5-cc031fc9cd30.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--2447-별찍기---10-별찍기-11과-비슷-httpswwwyoutubecomwatchvwjmevp-lgns-참고하기&quot;&gt;- 2447 별찍기 - 10 (별찍기 11과 비슷 https://www.youtube.com/watch?v=WjmEVp-Lgns 참고하기)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88814263-d42a7880-d1f4-11ea-9988-0cf2d21f7455.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;코드1if방식&quot;&gt;코드1(if방식)&lt;/h4&gt;
+&lt;h4 id=&quot;코드1-블로그참고-실패&quot;&gt;코드1 (블로그참고, 실패)&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86426380-84a27b00-bd22-11ea-9aa5-cc031fc9cd30.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/89544856-943f4300-d83d-11ea-85fb-a7284c0c8d14.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;코드2switch방식&quot;&gt;코드2(switch방식)&lt;/h4&gt;
+&lt;h4 id=&quot;코드2-296ms&quot;&gt;코드2 296ms&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86431356-93435f00-bd2f-11ea-8b9c-3c205a3384fb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;코드3switch방식&quot;&gt;코드3(switch방식)&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86431289-64c58400-bd2f-11ea-995d-7489467e85e1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/89657333-e2b91400-d907-11ea-9757-b91fd046c41d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--2753-윤년-문제&quot;&gt;- 2753 윤년 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86427249-adc40b00-bd24-11ea-876d-c55a3c256306.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--11729-하노이-탑-이동순서&quot;&gt;- 11729 하노이 탑 이동순서&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88814456-1653ba00-d1f5-11ea-955c-b6b59a9f9f6c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
+&lt;h4 id=&quot;코드1&quot;&gt;코드1&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86432150-bb33c200-bd31-11ea-941e-d2cf6c22ac6e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;hr /&gt;
-&lt;h3 id=&quot;--14681-사분면-문제&quot;&gt;- 14681 사분면 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86427299-d21fe780-bd24-11ea-8c73-5a92226d6862.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;코드-2&quot;&gt;코드&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86432497-dfdc6980-bd32-11ea-8188-9cecad5c50bc.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;--2884-알람-시계-문제&quot;&gt;- 2884 알람 시계 문제&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86427336-ed8af280-bd24-11ea-803c-3a3db6ccc7e4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;코드-1-scanner&quot;&gt;코드 1 (Scanner)&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86438066-c9d5a580-bd40-11ea-8728-7cdc0eee0f0d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;코드-2-bufferedreader---springtokenizer&quot;&gt;코드 2 (BufferedReader - SpringTokenizer)&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86438229-220ca780-bd41-11ea-984f-22b213f1c632.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;코드-3-bufferedreader---split&quot;&gt;코드 3 (BufferedReader - split)&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86438282-3b155880-bd41-11ea-929a-a8f7a6717f08.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기 if문 단계 - 1330 두 수 비교하기 문제</summary></entry><entry><title type="html">BaeckJoon 단계별_ 입출력과 사칙연산 10171, 10172, 1000, 1001, 10998, 1008, 10869, 10430, 2588</title><link href="http://localhost:4000/baeckjoon/AlBJstep03/" rel="alternate" type="text/html" title="BaeckJoon 단계별_ 입출력과 사칙연산 10171, 10172, 1000, 1001, 10998, 1008, 10869, 10430, 2588" /><published>2020-07-03T00:00:00+09:00</published><updated>2020-07-03T11:31:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep03</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep03/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기&quot;&gt;백준 알고리즘 _단계별로 풀어보기&lt;/h2&gt;
-&lt;h3 id=&quot;입출력과-사칙연산&quot;&gt;입출력과 사칙연산&lt;/h3&gt;
-&lt;h3 id=&quot;--10171-고양이-문제&quot;&gt;- 10171 고양이 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86418813-56b23c00-bd0c-11ea-8bc8-b0d0d186608e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 재귀 - 10872 팩토리얼</summary></entry><entry><title type="html">이클립스 단축키</title><link href="http://localhost:4000/certificate/Eclipse-%EB%8B%A8%EC%B6%95%ED%82%A4/" rel="alternate" type="text/html" title="이클립스 단축키" /><published>2020-07-25T00:00:00+09:00</published><updated>2020-08-14T00:11:00+09:00</updated><id>http://localhost:4000/certificate/Eclipse%20%EB%8B%A8%EC%B6%95%ED%82%A4</id><content type="html" xml:base="http://localhost:4000/certificate/Eclipse-%EB%8B%A8%EC%B6%95%ED%82%A4/">&lt;h2 id=&quot;이클립스-단축키&quot;&gt;이클립스 단축키&lt;/h2&gt;
+
+&lt;p&gt;Ctrl + D : 줄 삭제
+Ctrl + Alt + 위/아래 : 줄 복사
+Ctrl + Shift + / : 주석처리 (Ctrl + Shit + \ 주석 풀기)
+Ctrl + / : 라인별로 주석처리
+Ctrl + Shift + O : import 정리
+Ctrl + K : 다음 찾기(Ctrl + Shift + K 이전 찾기)  - 현재 블럭설정된 단어 찾기
+Ctrl + H : 검색 다이얼로그(메서드, 타입, 패키지 등 검색 가능)
+Tab : 들여쓰기 (Shift + Tab : 내어쓰기)&lt;/p&gt;
+
+&lt;p&gt;Ctrl + Shift + R : 리소스 찾기
+Ctrl + Shift  + Space : 메서드의 괄호안에서 누르면 파라미터 타입 볼 수 있음.
+Ctrl + 1 : 에러난 곳(빨간 줄 표시)에서 누르면 레이어로 해결방법이 나옴.
+F3 : 해당 메서드나 클래스가 정의된 곳으로 이동&lt;/p&gt;
+
+&lt;p&gt;Ctrl + Shift + L : 단축키 리스트
+Alt + Shift + X, R : Run on Server
+F11 or Ctrl + F11 : 최근 실행한 Run 실행&lt;/p&gt;
+
+&lt;h4 id=&quot;--참고&quot;&gt;- 참고&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://blog.outsider.ne.kr/243&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="Certificate" /><category term="Eclipse" /><summary type="html">이클립스 단축키</summary></entry><entry><title type="html">정보처리기사 시험 내용</title><link href="http://localhost:4000/certificate/Certificate/" rel="alternate" type="text/html" title="정보처리기사 시험 내용" /><published>2020-07-25T00:00:00+09:00</published><updated>2020-07-26T00:11:00+09:00</updated><id>http://localhost:4000/certificate/Certificate</id><content type="html" xml:base="http://localhost:4000/certificate/Certificate/">&lt;h2 id=&quot;정보처리기사산업기사&quot;&gt;정보처리기사/산업기사&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;개정전 전자계산기(2과목) 과목 제외(13~25)&lt;/li&gt;
+  &lt;li&gt;그외 4과목 기출 내용 비슷함&lt;/li&gt;
+  &lt;li&gt;시나공 + 이기쥬히 + 기출 활용&lt;/li&gt;
+  &lt;li&gt;필기 시험 : 08.22~23 객관식 4지 선택형(과목당 30분)&lt;/li&gt;
+  &lt;li&gt;필기 합격 : 평균 60점이상, 과목당 40점 이상&lt;/li&gt;
+  &lt;li&gt;실기 시험: 10.17~11.01 필답형(2시간 30분)&lt;/li&gt;
+  &lt;li&gt;실기 합격 : 60점이상&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;1과목--소프트웨어-설계&quot;&gt;1과목 : 소프트웨어 설계&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;코딩지식위주&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2과목--소프트웨어-개발&quot;&gt;2과목 : 소프트웨어 개발&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;암기위주&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3과목--데이터베이스-구축&quot;&gt;3과목 : 데이터베이스 구축&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;암기위주&lt;/li&gt;
+  &lt;li&gt;기출위주로 출제가 많이 됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4과목--프로그래밍-언어-활용&quot;&gt;4과목 : 프로그래밍 언어 활용&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;코딩지식위주&lt;/li&gt;
+  &lt;li&gt;까다로운 문제는 넘어가기(시간분배)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5과목--정보시스템-구축-관리&quot;&gt;5과목 : 정보시스템 구축 관리&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;암기위주&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;3 &amp;gt; 4 &amp;gt; 1/2/5ㄴ
+    &lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;정보처리기사 (시나공)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="Certificate" /><category term="Certificate" /><category term="정보처리기사" /><summary type="html">정보처리기사/산업기사 개정전 전자계산기(2과목) 과목 제외(13~25) 그외 4과목 기출 내용 비슷함 시나공 + 이기쥬히 + 기출 활용 필기 시험 : 08.22~23 객관식 4지 선택형(과목당 30분) 필기 합격 : 평균 60점이상, 과목당 40점 이상 실기 시험: 10.17~11.01 필답형(2시간 30분) 실기 합격 : 60점이상</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 수학2 1978, 2581, 1929, 4948, 9020, 1085, 3009, 4153, 3053, 1002</title><link href="http://localhost:4000/baeckjoon/AlBJstep12/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 수학2 1978, 2581, 1929, 4948, 9020, 1085, 3009, 4153, 3053, 1002" /><published>2020-07-18T00:00:00+09:00</published><updated>2020-07-19T00:21:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep12</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep12/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;수학-2&quot;&gt;수학 2&lt;/h3&gt;
+&lt;h3 id=&quot;--1978-소수-찾기-문제&quot;&gt;- 1978 소수 찾기 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558442-12537280-c6f4-11ea-8acc-91451a4199ed.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86418678-e2779880-bd0b-11ea-8362-c927a0de70e6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/89734669-7cafc680-da98-11ea-9018-f030b7c19bfc.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--10172-개-문제&quot;&gt;- 10172 개 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86418872-8a8d6180-bd0c-11ea-9eaf-a930a355cd69.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--2581-소수-문제&quot;&gt;- 2581 소수 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558524-27c89c80-c6f4-11ea-9ff0-460c567801bd.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419175-6716e680-bd0d-11ea-8407-b88975baddc6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/89734669-7cafc680-da98-11ea-9018-f030b7c19bfc.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--1000-a--b-문제&quot;&gt;- 1000 A + B 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419255-8746a580-bd0d-11ea-9cb8-8552b923338a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--1929-소수구하기-문제&quot;&gt;- 1929 소수구하기 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558618-475fc500-c6f4-11ea-9abd-6a3ea07f88b4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-사용-ms&quot;&gt;코드1. 사용 ms&lt;/h4&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2--사용-ms&quot;&gt;코드2.  사용 ms&lt;/h4&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--4948-베르트랑-공준-문제&quot;&gt;- 4948 베르트랑 공준 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558751-6b230b00-c6f4-11ea-982a-bf34c1a5f5e2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-컴파일에러&quot;&gt;코드1. 컴파일에러&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/90650093-69f67800-e276-11ea-82df-8a4d5699e53b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--9020-골드하브의-추측-문제&quot;&gt;- 9020 골드하브의 추측 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558804-7bd38100-c6f4-11ea-9080-0c221c1529ad.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-2&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419584-8e21e800-bd0e-11ea-8a8f-500f9ad1184e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--1001-a---b-문제&quot;&gt;- 1001 A - B 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419624-b3aef180-bd0e-11ea-9ca9-ab1cfb6e2ac1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--1085-직사각형에서-탈출-문제&quot;&gt;- 1085 직사각형에서 탈출 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559219-f8665f80-c6f4-11ea-8c88-f16a63847960.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-3&quot;&gt;코드&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419734-20c28700-bd0f-11ea-80b9-cdfc109d8b58.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--10998-a--b-문제&quot;&gt;- 10998 A * B 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419692-f1137f00-bd0e-11ea-9a59-8b9a59246c9c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--3009-네-번째-점-문제&quot;&gt;- 3009 네 번째 점 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559328-1fbd2c80-c6f5-11ea-9688-4e1173f488fa.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-4&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419803-5f584180-bd0f-11ea-803b-0587740fa196.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--1008-a--b-문제&quot;&gt;- 1008 A / B 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419925-c675f600-bd0f-11ea-9a0e-7a10c1c8f9bf.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--4153-직각삼각형-문제&quot;&gt;- 4153 직각삼각형 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559535-61e66e00-c6f5-11ea-9aae-2f42f56ac02a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-5&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86420361-58323300-bd11-11ea-8a05-4ceb1566368b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--10869-사칙연산-문제&quot;&gt;- 10869 사칙연산 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419906-b2ca8f80-bd0f-11ea-970e-f66ad04c6804.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--3053-택시-기하학-문제&quot;&gt;- 3053 택시 기하학 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558751-6b230b00-c6f4-11ea-982a-bf34c1a5f5e2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-6&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86420639-384f3f00-bd12-11ea-82f0-2e28fb28fc5b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--10430-나머지-문제&quot;&gt;- 10430 나머지 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419937-d2fa4e80-bd0f-11ea-87aa-114fcbdb2c5c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--1002-터렛-문제&quot;&gt;- 1002 터렛 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558751-6b230b00-c6f4-11ea-982a-bf34c1a5f5e2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드-7&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86420928-130f0080-bd13-11ea-91cc-7cdd5a0fd50d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+  &lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 수학 2 - 1978 소수 찾기 문제</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 수학1 1712, 2839, 2292, 1193, 2869, 10250, 2775, 1011</title><link href="http://localhost:4000/baeckjoon/AlBJstep11/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 수학1 1712, 2839, 2292, 1193, 2869, 10250, 2775, 1011" /><published>2020-07-15T00:00:00+09:00</published><updated>2021-03-22T00:11:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep11</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep11/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;수학-1&quot;&gt;수학 1&lt;/h3&gt;
+&lt;h3 id=&quot;--1712-손익분기점-문제&quot;&gt;- 1712 손익분기점 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558442-12537280-c6f4-11ea-8acc-91451a4199ed.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-이클립스에서는-성공-백준-실패-111&quot;&gt;코드1 이클립스에서는 성공. 백준 실패 111&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87877889-e568cd80-ca1b-11ea-9c2c-98082a6171a5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-76ms&quot;&gt;코드2 76ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87877864-c1a58780-ca1b-11ea-9ceb-9db732943a7a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-&lt;h3 id=&quot;--2588-곱셈-문제&quot;&gt;- 2588 곱셈 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86419965-e7d6e200-bd0f-11ea-999d-19e569107eae.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--2839-설탕-배달-문제&quot;&gt;- 2839 설탕 배달 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558524-27c89c80-c6f4-11ea-9ff0-460c567801bd.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;코드-8&quot;&gt;코드&lt;/h4&gt;
+&lt;h4 id=&quot;코드1-break설정-안함-실패&quot;&gt;코드1 break설정 안함 실패&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86421237-36867b00-bd14-11ea-9bea-2d09505a0abd.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88062477-da40a980-cba3-11ea-8c96-d079eccdb4d7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기 입출력과 사칙연산 - 10171 고양이 문제</summary></entry><entry><title type="html">BaeckJoon 단계별_ 입출력과 사칙연산 2557 Hello World</title><link href="http://localhost:4000/baeckjoon/AlBJstep01/" rel="alternate" type="text/html" title="BaeckJoon 단계별_ 입출력과 사칙연산 2557 Hello World" /><published>2020-07-02T00:00:00+09:00</published><updated>2020-07-02T15:16:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep01</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep01/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기&quot;&gt;백준 알고리즘 _단계별로 풀어보기&lt;/h2&gt;
-&lt;h3 id=&quot;입출력과-사칙연산&quot;&gt;입출력과 사칙연산&lt;/h3&gt;
-&lt;h4 id=&quot;--2557-문제&quot;&gt;- 2557 문제&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86330567-cf6cb600-bc82-11ea-88cf-a39d88cda742.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
-&lt;p&gt;Hello World! 를 출력하기&lt;/p&gt;
-
-&lt;h3 id=&quot;코드&quot;&gt;코드&lt;/h3&gt;
+&lt;h4 id=&quot;코드2-break설정-반복문-조건-추가&quot;&gt;코드2 break설정, 반복문 조건 추가&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86331674-5c643f00-bc84-11ea-9a50-5b444da2e8fb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88063471-0577c880-cba5-11ea-8b2c-d6d0d7c3943b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기 입출력과 사칙연산 - 2557 문제</summary></entry><entry><title type="html">BaeckJoon 단계별_ 입출력과 사칙연산 10718 We love kriii</title><link href="http://localhost:4000/baeckjoon/AlBJstep02/" rel="alternate" type="text/html" title="BaeckJoon 단계별_ 입출력과 사칙연산 10718 We love kriii" /><published>2020-07-02T00:00:00+09:00</published><updated>2020-07-02T18:31:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep02</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep02/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기&quot;&gt;백준 알고리즘 _단계별로 풀어보기&lt;/h2&gt;
-&lt;h3 id=&quot;입출력과-사칙연산&quot;&gt;입출력과 사칙연산&lt;/h3&gt;
-&lt;h3 id=&quot;--10718-문제&quot;&gt;- 10718 문제&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86335663-bfa4a000-bc89-11ea-8434-1997d287b0e6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2292-벌집-문제&quot;&gt;- 2292 벌집 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558618-475fc500-c6f4-11ea-9abd-6a3ea07f88b4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;풀이&quot;&gt;풀이&lt;/h4&gt;
-&lt;p&gt;글자 출력&lt;/p&gt;
+&lt;h4 id=&quot;코드-80ms&quot;&gt;코드 80ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88227135-1b21e680-cca8-11ea-8b5f-19c03d89cc7d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1193-분수찾기-문제&quot;&gt;- 1193 분수찾기 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558751-6b230b00-c6f4-11ea-982a-bf34c1a5f5e2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1--출력초과&quot;&gt;코드1  출력초과&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88681781-e5a84d80-d12c-11ea-85b5-b33d21cda6f0.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-80ms&quot;&gt;코드2 80ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88681874-fce73b00-d12c-11ea-8829-14c2e0a1c99a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2869-달팽이는-올라가고-싶다-문제&quot;&gt;- 2869 달팽이는 올라가고 싶다 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87558804-7bd38100-c6f4-11ea-9080-0c221c1529ad.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-시간초과&quot;&gt;코드1 시간초과&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88299214-16f3d880-cd3d-11ea-9419-43f7a717198a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2&quot;&gt;코드2&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88404395-cb0e6580-ce08-11ea-8877-f1423df64b80.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드3&quot;&gt;코드3&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/88473453-8e518400-cf58-11ea-8efb-3dfb673ecfef.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--10250-acm-호텔-문제&quot;&gt;- 10250 ACM 호텔 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559219-f8665f80-c6f4-11ea-8c88-f16a63847960.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86335957-232ecd80-bc8a-11ea-85fd-5dc577f6c902.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/91661050-9468f080-eb14-11ea-8892-b4d79fde1e83.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#### - 참고 목록&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2775-부녀회장이-될테야-문제&quot;&gt;- 2775 부녀회장이 될테야 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559328-1fbd2c80-c6f5-11ea-9688-4e1173f488fa.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/111906749-8b7e4300-8a95-11eb-92fa-21b65b44c93a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1011-fly-me-to-the-alpha-centauri-문제&quot;&gt;- 1011 Fly me to the Alpha Centauri 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87559535-61e66e00-c6f5-11ea-9aae-2f42f56ac02a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-시간초과-1&quot;&gt;코드1 시간초과&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/112009155-7e328880-8b69-11eb-9177-935a144d1f03.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기 입출력과 사칙연산 - 10718 문제</summary></entry><entry><title type="html">Jekyll Test</title><link href="http://localhost:4000/jekyll/Jekyll-Test/" rel="alternate" type="text/html" title="Jekyll Test" /><published>2020-06-30T00:00:00+09:00</published><updated>2020-07-01T15:16:00+09:00</updated><id>http://localhost:4000/jekyll/Jekyll-Test</id><content type="html" xml:base="http://localhost:4000/jekyll/Jekyll-Test/">&lt;h2 id=&quot;blog-first-post&quot;&gt;Blog First Post&lt;/h2&gt;
-&lt;p&gt;jekyll 포스트 업로드 test를 위해 생성한 글입니다.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 수학 1 - 1712 손익분기점 문제</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 문자열 11654, 11720, 10809, 2675, 1157, 1152, 2908, 5622, 2941, 1316</title><link href="http://localhost:4000/baeckjoon/AlBJstep10/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 문자열 11654, 11720, 10809, 2675, 1157, 1152, 2908, 5622, 2941, 1316" /><published>2020-07-10T00:00:00+09:00</published><updated>2020-07-13T00:11:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep10</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep10/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;문자열&quot;&gt;문자열&lt;/h3&gt;
+&lt;h3 id=&quot;--11654-아스키-코드-문제&quot;&gt;- 11654 아스키 코드 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87115952-a3b78480-c2af-11ea-997d-1177e57c3652.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;목차-설정-test&quot;&gt;목차 설정 Test&lt;/h2&gt;
-&lt;p&gt;목차 테스트입니다&lt;/p&gt;
+&lt;h4 id=&quot;코드1-bufferedreader-사용&quot;&gt;코드1. BufferedReader 사용&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87119473-07927b00-c2b9-11ea-9644-ba37f9dc7f00.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&quot;참고-목록&quot;&gt;참고 목록&lt;/h2&gt;
+&lt;h4 id=&quot;코드2-systeminread-사용&quot;&gt;코드2. System.in.read() 사용&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87119483-14af6a00-c2b9-11ea-92e1-ee1eed772f2a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--11720-숫자의-합-문제&quot;&gt;- 11720 숫자의 합 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87115975-b0d47380-c2af-11ea-9191-2f5be380f77a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87120362-2eea4780-c2bb-11ea-9571-2249e8b0cdb1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--10809-알파벳-찾기-문제&quot;&gt;- 10809 알파벳 찾기 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116000-c184e980-c2af-11ea-8ad8-c1cb25ef6d3a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-char-비교&quot;&gt;코드1. char 비교&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87127038-349a5a00-c2c8-11ea-8f0b-84839bbc26a2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-아스키코드-이용&quot;&gt;코드2. 아스키코드 이용&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87128627-e89ce480-c2ca-11ea-9407-15163de7dc8c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2675-문자열-반복-문제&quot;&gt;- 2675 문자열 반복 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116025-cc3f7e80-c2af-11ea-88d2-e6574963083f.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87130497-f56f0780-c2cd-11ea-830b-a84674f631cd.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1157-단어-공부-문제&quot;&gt;- 1157 단어 공부 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116080-e37e6c00-c2af-11ea-8c03-06f734412857.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-시간초과&quot;&gt;코드1 시간초과&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87226229-5a5d5700-c3cd-11ea-8720-7936654ab983.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-아스키-코드-208ms&quot;&gt;코드2 아스키 코드 208ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87248550-f605ca80-c494-11ea-9a1e-2c88c9a41985.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드3-아스키-코드--systeminread-116ms&quot;&gt;코드3 아스키 코드 + System.in.read() 116ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87248576-19c91080-c495-11ea-9d64-05f494a0ff99.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1152-단어의-개수-문제&quot;&gt;- 1152 단어의 개수 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116132-f98c2c80-c2af-11ea-9e5b-fb2ceedd728a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-sprit-사용-앞뒤공백-읽음-공백만-있어도-단어-1개로-계산함&quot;&gt;코드1 sprit() 사용. 앞뒤공백 읽음/ 공백만 있어도 단어 1개로 계산함.&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87249064-e0de6b00-c497-11ea-886e-97b7c979f84e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-stringtokenizer-사용-앞뒤-공백-무시-구분자-기준으로-단어-수만-계산해주는-counttokens-함수-있음&quot;&gt;코드2 StringTokenizer 사용. 앞뒤 공백 무시/ 구분자 기준으로 단어 수만 계산해주는 countTokens() 함수 있음.&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87249071-f81d5880-c497-11ea-9fc4-507c838d8360.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2908-상수-문제&quot;&gt;- 2908 상수 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116178-1294dd80-c2b0-11ea-97ef-912b3693f5b5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-2&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87249394-d3c27b80-c499-11ea-87d4-d4636a933f84.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--5622-다이얼-문제&quot;&gt;- 5622 다이얼 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116207-20e2f980-c2b0-11ea-95c0-3a2332064bb9.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-3&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87439708-10be7780-c62c-11ea-887f-5163f487e44b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2941-크로아티아-알파벳-문제&quot;&gt;- 2941 크로아티아 알파벳 문제&lt;/h3&gt;
+&lt;p&gt;![image](https://user-images.githubusercontent.com/66898243/87116241-39531400-c2b0-11ea-80ec-e65250aa16b4.png&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-4&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87796047-d0f1cd00-c883-11ea-918f-c96f127849e3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1316-그룹-단어-체커-문제&quot;&gt;- 1316 그룹 단어 체커 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87116278-5556b580-c2b0-11ea-99fb-3d4266bab3eb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-이클립스에서는-실행되나-실패&quot;&gt;코드1 이클립스에서는 실행되나 실패&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87876925-265de380-ca16-11ea-92f8-ed64d58c5a5f.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-80ms&quot;&gt;코드2 80ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87876945-47becf80-ca16-11ea-8af4-5d30d245ce6b.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jetalog.net/86&quot;&gt;Jekyll을 이용해 GitHub에 블로그 만들기 (1)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jetalog.net/87&quot;&gt;Jekyll을 이용해 GitHub에 블로그 만들기 (2)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io&quot;&gt;Jekyll 공식 홈페이지&lt;/a&gt;
-```&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="Jekyll" /><category term="Jekyll" /><summary type="html">Blog First Post jekyll 포스트 업로드 test를 위해 생성한 글입니다. 목차 설정 Test 목차 테스트입니다 참고 목록 Jekyll을 이용해 GitHub에 블로그 만들기 (1) Jekyll을 이용해 GitHub에 블로그 만들기 (2) Jekyll 공식 홈페이지 ```</summary></entry></feed>
+  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 문자열 - 11654 아스키 코드 문제</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 함수 15596, 4673, 1065</title><link href="http://localhost:4000/baeckjoon/AlBJstep09/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 함수 15596, 4673, 1065" /><published>2020-07-08T00:00:00+09:00</published><updated>2020-07-10T14:01:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep09</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep09/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;함수&quot;&gt;함수&lt;/h3&gt;
+&lt;h3 id=&quot;--15596-정수-n개의-합-문제&quot;&gt;- 15596 정수 N개의 합 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86991913-39351480-c1db-11ea-886c-543ebe0cb8e6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86991723-bdd36300-c1da-11ea-8bc4-2922dada164e.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--4673-셀프-넘버-문제&quot;&gt;- 4673 셀프 넘버 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87018418-2be44e00-c20c-11ea-9174-b2d0353a291d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-배열-10001개&quot;&gt;코드1. 배열 10001개&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87008372-99897d80-c1fe-11ea-823e-0bdae86c3757.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-배열-10000개&quot;&gt;코드2. 배열 10000개&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87018008-a8c2f800-c20b-11ea-889e-fff43647ccc4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1065-한수-문제&quot;&gt;- 1065 한수 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87115246-aa44fc80-c2ad-11ea-8fc7-3bbd68ebb909.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/87111502-7dd8b280-c2a4-11ea-9109-e431a163bd0a.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 함수 - 15596 정수 N개의 합 문제</summary></entry><entry><title type="html">BaeckJoon 단계별(JAVA)_ 1차원 배열 10818, 2562, 2577, 3052, 1546, 8958, 4344</title><link href="http://localhost:4000/baeckjoon/AlBJstep08/" rel="alternate" type="text/html" title="BaeckJoon 단계별(JAVA)_ 1차원 배열 10818, 2562, 2577, 3052, 1546, 8958, 4344" /><published>2020-07-07T00:00:00+09:00</published><updated>2020-07-08T18:21:00+09:00</updated><id>http://localhost:4000/baeckjoon/AlBJstep08</id><content type="html" xml:base="http://localhost:4000/baeckjoon/AlBJstep08/">&lt;h2 id=&quot;백준-알고리즘-_단계별로-풀어보기java&quot;&gt;백준 알고리즘 _단계별로 풀어보기(JAVA)&lt;/h2&gt;
+&lt;h3 id=&quot;1차원-배열&quot;&gt;1차원 배열&lt;/h3&gt;
+&lt;h3 id=&quot;--10818-최소-최대&quot;&gt;- 10818 최소, 최대&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86696800-c1cf7b80-c048-11ea-9257-87a41daff17d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-math-사용안함-448ms&quot;&gt;코드1. Math 사용안함 448ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86732625-84301a00-c06b-11ea-9abf-3185f501f198.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-math-사용-412ms&quot;&gt;코드2. Math 사용 412ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86732699-9316cc80-c06b-11ea-9505-e929ff31f69d.png&quot; alt=&quot;image&quot; /&gt;
+***&lt;/p&gt;
+  &lt;h3 id=&quot;--2562-최댓값-문제&quot;&gt;- 2562 최댓값 문제&lt;/h3&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86697431-576b0b00-c049-11ea-98e9-4107a54733fc.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86734049-a5453a80-c06c-11ea-93f5-ff7a44a7815f.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--2577-숫자의-개수-문제&quot;&gt;- 2577 숫자의 개수 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86697529-6e116200-c049-11ea-8092-4be7a8eacfb7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-1&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86737904-98761600-c06f-11ea-8bcc-7c0ff6d14dca.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--3052-나머지-문제&quot;&gt;- 3052 나머지 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86697593-7f5a6e80-c049-11ea-97a0-5cde9086f806.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-set-사용하지않고-풀기-80ms&quot;&gt;코드1. set 사용하지않고 풀기 80ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86862163-a07f9580-c103-11ea-9f7a-39f4620d90bb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-set-사용-80ms&quot;&gt;코드2. set 사용 80ms&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86862194-b3926580-c103-11ea-8c86-e4e03a8e66cb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--1546-평균-문제&quot;&gt;- 1546 평균 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86719696-44fbcc00-c05f-11ea-9eea-4729e6ebd6ac.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-2&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86869119-f27ae800-c110-11ea-8a12-8057530c137f.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--8958-ox퀴즈-문제&quot;&gt;- 8958 OX퀴즈 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86719752-5349e800-c05f-11ea-9271-e2eedbf01587.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드1-하나하나-잘라서-비교&quot;&gt;코드1 하나하나 잘라서 비교&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86876302-5c9a8980-c11f-11ea-882d-43c5b12c3d3c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;코드2-charat-사용&quot;&gt;코드2 .CharAt() 사용&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86876262-4d1b4080-c11f-11ea-99d9-18386e932fe7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;--4344-평균은-넘겠지-문제&quot;&gt;- 4344 평균은 넘겠지 문제&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86719830-66f54e80-c05f-11ea-9085-84b26e7146d2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;코드-3&quot;&gt;코드&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/66898243/86990511-b5c5f400-c1d7-11ea-837c-23fc71347d60.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;--참고-목록&quot;&gt;- 참고 목록&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://www.acmicpc.net/problem/2557&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>seoJang</name><email>jangseo48@gmail.com</email></author><category term="BaeckJoon" /><category term="Algorithm" /><category term="BaeckJoon" /><summary type="html">백준 알고리즘 _단계별로 풀어보기(JAVA) 1차원 배열 - 10818 최소, 최대</summary></entry></feed>
