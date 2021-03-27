@@ -17,7 +17,7 @@ toc_label: 목차
 ---
 ## Dependabot alerts   
 ![image](https://user-images.githubusercontent.com/66898243/112602505-1e80f980-8e57-11eb-8ed5-a2e33428e800.png)     
-git blog repositori에 떠 있던 Dependabot alerts 해결하기    
+git blog repository에 떠 있던 Dependabot alerts 해결하기    
 
 
 ### alerts 내용 
