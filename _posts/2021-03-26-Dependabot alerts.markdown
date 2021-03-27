@@ -21,19 +21,19 @@ git blog repositori에 떠 있던 Dependabot alerts 해결하기
 
 ### alerts 내용 
  > ![image](https://user-images.githubusercontent.com/66898243/112602481-17f28200-8e57-11eb-86d7-33ccaf7c9a13.png)    
- > ![image](https://user-images.githubusercontent.com/66898243/112603132-e928db80-8e57-11eb-8959-f4b37437f1a7.png)   
+ > ![image](https://user-images.githubusercontent.com/66898243/112603132-e928db80-8e57-11eb-8959-f4b37437f1a7.png)      
  gitblog 생성시 사용했던 Ruby의 gem을 업데이트 해주라는 알림이 떴다
  
 ### alerts 해결  
  1. bundle update로 전체적인 gem 버전 업데이트
  ![image](https://user-images.githubusercontent.com/66898243/112603980-07dba200-8e59-11eb-8483-cbd62d328c08.png) 
- ![image](https://user-images.githubusercontent.com/66898243/112604443-7c164580-8e59-11eb-8131-18f082be1f48.png) 
+ ![image](https://user-images.githubusercontent.com/66898243/112604443-7c164580-8e59-11eb-8131-18f082be1f48.png)   
  kramdown은 정상적으로 update 됐는데 (원래 뒤에 was v.이전버전 안내가 나오는데 그때 캡쳐를 못했다..)    
- ![image](https://user-images.githubusercontent.com/66898243/112604962-1d9d9700-8e5a-11eb-99c3-d09abca06091.png) 
+ ![image](https://user-images.githubusercontent.com/66898243/112604962-1d9d9700-8e5a-11eb-99c3-d09abca06091.png)    
  rack은 업데이트가 되지 않는다    
  
  2. rack만 따로 install 한 다음 이전버전 rack을 uninstall
- ![image](https://user-images.githubusercontent.com/66898243/112605317-84bb4b80-8e5a-11eb-92cb-2c5ef19959a2.png) 
+ ![image](https://user-images.githubusercontent.com/66898243/112605317-84bb4b80-8e5a-11eb-92cb-2c5ef19959a2.png)    
  만약 그래도 alerts가 계속 떠있다면
  
  3. Gemfile.lock 수정    
