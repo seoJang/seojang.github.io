@@ -43,6 +43,6 @@ apk 파일이 압축 해제
 
    
 ## 참고 목록
-- [](https://developer.android.com/google/play/expansion-files#Overview)
+- [developer.android.com](https://developer.android.com/google/play/expansion-files#Overview)
 - [APK란? 그 구조는?](https://m.blog.naver.com/PostView.nhn?blogId=ilikebigmac&logNo=221466806806&proxyReferer=https:%2F%2Fwww.google.com%2F)
 - [[안드로이드] Resources 개요](https://ecogeo.tistory.com/274)
