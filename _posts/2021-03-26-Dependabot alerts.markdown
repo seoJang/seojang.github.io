@@ -27,10 +27,8 @@ git blog repositori에 떠 있던 Dependabot alerts 해결하기
 ### alerts 해결  
  1. bundle update로 전체적인 gem 버전 업데이트
  > ![image](https://user-images.githubusercontent.com/66898243/112721035-1c956400-8f45-11eb-8e2c-8c9668c3466d.png)   
- > ![image](https://user-images.githubusercontent.com/66898243/112604443-7c164580-8e59-11eb-8131-18f082be1f48.png)
- kramdown은 정상적으로 update 됐는데 (원래 뒤에 was v.이전버전 안내가 나오는데 그때 캡쳐를 못했다)
- 
- 
+ > ![image](https://user-images.githubusercontent.com/66898243/112604443-7c164580-8e59-11eb-8131-18f082be1f48.png)     
+ kramdown은 정상적으로 update 됐는데 (원래 뒤에 was v.이전버전 안내가 나오는데 그때 캡쳐를 못했다)    
  > ![image](https://user-images.githubusercontent.com/66898243/112721019-ff609580-8f44-11eb-9be4-36a7baed599b.png)       
  rack은 업데이트가 되지 않는다    
  
