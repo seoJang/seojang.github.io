@@ -35,10 +35,10 @@ View, Control에 종속적이지 않고 재사용이 가능함
 **Controller**    
 사용자의 입력을 받고 처리하는 부분.      
 Model과 View의 매개체    
-![https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png](https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png){: width="500px", height="500px"}   
-![https://user-images.githubusercontent.com/66898243/112809040-939d3a80-90b4-11eb-863d-c70cde0912a4.png](https://user-images.githubusercontent.com/66898243/112809040-939d3a80-90b4-11eb-863d-c70cde0912a4.png){: width="500px", height="500px"}   
-![https://user-images.githubusercontent.com/66898243/112809626-263dd980-90b5-11eb-9e92-ec8641211b01.png](https://user-images.githubusercontent.com/66898243/112809626-263dd980-90b5-11eb-9e92-ec8641211b01.png){: width="500px", height="500px"}    
-![https://user-images.githubusercontent.com/66898243/112810296-d4e21a00-90b5-11eb-9942-6dd66608bc75.png](https://user-images.githubusercontent.com/66898243/112810296-d4e21a00-90b5-11eb-9942-6dd66608bc75.png){: width="500px", height="500px"}       
+![https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png](https://user-images.githubusercontent.com/66898243/112164023-e8623080-8c30-11eb-9ec3-28e69e8cdebd.png){ width="500px" height="500px"}   
+![https://user-images.githubusercontent.com/66898243/112809040-939d3a80-90b4-11eb-863d-c70cde0912a4.png](https://user-images.githubusercontent.com/66898243/112809040-939d3a80-90b4-11eb-863d-c70cde0912a4.png){ width="500px" height="500px"}   
+![https://user-images.githubusercontent.com/66898243/112809626-263dd980-90b5-11eb-9e92-ec8641211b01.png](https://user-images.githubusercontent.com/66898243/112809626-263dd980-90b5-11eb-9e92-ec8641211b01.png){ width="500px" height="500px"}    
+![https://user-images.githubusercontent.com/66898243/112810296-d4e21a00-90b5-11eb-9942-6dd66608bc75.png](https://user-images.githubusercontent.com/66898243/112810296-d4e21a00-90b5-11eb-9942-6dd66608bc75.png){ width="500px" height="500px"}       
     
 1. Controller로 입력이 들어옴    
 2. Controller가 Model을 데이터 업데이트하고    
@@ -68,8 +68,8 @@ Presenter에게서 Model이 처리한 데이터를 전달받음   => Presenter�
 (Controller와 유사하게) Model과 View의 매개체    
 View에 직접 연결되지는 않고 인터페이스로 상호작용  => 모듈화/유연성 증가 
 View에게 Data(내용)만 전달 => 표현은 View가 담당   
-![image](https://user-images.githubusercontent.com/66898243/112848205-c9591800-90e2-11eb-8b0d-0036844501dc.png){: width="500px", height="500px"}        
-![image](https://user-images.githubusercontent.com/66898243/112842612-b3e0ef80-90dc-11eb-8a7f-6e96d2f902d6.png){: width="500px", height="500px"}      
+![image](https://user-images.githubusercontent.com/66898243/112848205-c9591800-90e2-11eb-8b0d-0036844501dc.png){ width="500px" height="500px"}        
+![image](https://user-images.githubusercontent.com/66898243/112842612-b3e0ef80-90dc-11eb-8a7f-6e96d2f902d6.png){ width="500px" height="500px"}      
     
 1. View로 입력이 들어옴   
 2. View에서 Presenter에게 데이터를 요청   
@@ -104,8 +104,8 @@ ViewModel에서 상태 변화가 전달되면 화면을 갱신.
 View를 나타내기 위한 Model.   
 View와 연관된 로직이 처리되는 부분. View가 데이터 바인딩 할 수 있는 속성, 명령으로 구성    
 View:ViewModel은 n:1의 관계. 여러개의 Fragment가 하나의 ViewModel을 가질 수 있다.   
-![image](https://user-images.githubusercontent.com/66898243/112846495-150ac200-90e1-11eb-9c32-cc1e7027a6d8.png){: width="500px", height="500px"}      
-![image](https://user-images.githubusercontent.com/66898243/112845267-a37e4400-90df-11eb-973d-d2bbbb86fd42.png){: width="500px", height="500px"}      
+![image](https://user-images.githubusercontent.com/66898243/112846495-150ac200-90e1-11eb-9c32-cc1e7027a6d8.png){ width="500px" height="500px"}      
+![image](https://user-images.githubusercontent.com/66898243/112845267-a37e4400-90df-11eb-973d-d2bbbb86fd42.png){ width="500px" height="500px"}      
   
 1. View로 입력이 들어옴   
 2. View에서 ViewModel로 명령 
