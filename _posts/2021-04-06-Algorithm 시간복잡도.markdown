@@ -61,8 +61,8 @@ f(n)이 n0보다 크거나 같은 모든 n에서 0 이상이고 c1g(n) 이상 c2
    
 ### Big O의 시간복잡도 표기법
 > O(1) < O(logn) < O(n) < O(n*logn) < O(n²) < O(n³) < O(2n) < O(n!)    
-| 표기 | 설명 |
-|---|:---:|
+| 표기 | 설명 |   
+|---|:---:|    
 |<center> O(1) </center> | <center> 상수 형태. n의 값에 상관없이 일정한 양의 계산만 한다. </center>|   
 |<center> O(logn) </center> | <center> 로그 형태 </center>|   
 |<center> O(n) </center> | <center> 선형 </center>|   
