@@ -7,7 +7,7 @@ categories:
  - Android
 tags: 
  - Android
-last_modified_at: '2021-04-06 20:55:00 +0800'
+last_modified_at: '2021-04-19 20:55:00 +0800'
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -73,7 +73,8 @@ f(n)이 n0보다 크거나 같은 모든 n에서 0 이상이고 c1g(n) 이상 c2
    
 위에서 아래로 내려올수록 시간복잡도가 높고 느려진다.   
 
-> (추가 예정)
+
+
     
 
 ## 참고
