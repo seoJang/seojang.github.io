@@ -61,8 +61,8 @@ f(n)이 n0보다 크거나 같은 모든 n에서 0 이상이고 c1g(n) 이상 c2
    
 ### Big O의 시간복잡도 표기법
 > O(1) < O(logn) < O(n) < O(n*logn) < O(n²) < O(n³) < O(2n) < O(n!)    
-| 표기 | 설명 |   
-|---|:---:|    
+|표기 | 설명|        
+|---|---|       
 |<center> O(1) </center> | <center> 상수 형태. n의 값에 상관없이 일정한 양의 계산만 한다. </center>|   
 |<center> O(logn) </center> | <center> 로그 형태 </center>|   
 |<center> O(n) </center> | <center> 선형 </center>|   
@@ -70,6 +70,22 @@ f(n)이 n0보다 크거나 같은 모든 n에서 0 이상이고 c1g(n) 이상 c2
 |<center> O(n²) </center> | <center> 다차 형태 </center> |   
 |<center> O(n³) </center> | <center> 지수 형태 </center> |   
 |<center> O(2n) </center> | <center> 팩토리얼 형태 </center> |   
+   
+|표기 | 설명|        
+|---|---|       
+|<center> O(1) </center> | <center> 상수 형태. n의 값에 상관없이 일정한 양의 계산만 한다. </center>|   
+|<center> O(logn) </center> | <center> 로그 형태 </center>|   
+|<center> O(n) </center> | <center> 선형 </center>|   
+|<center> O(n*logn) </center> | <center> 선형로그 </center>|   
+|<center> O(n²) </center> | <center> 다차 형태 </center> |   
+|<center> O(n³) </center> | <center> 지수 형태 </center> |   
+|<center> O(2n) </center> | <center> 팩토리얼 형태 </center> |     
+
+Title1|Title2
+-|-
+content1|content2
+content3|content4
+
    
 위에서 아래로 내려올수록 시간복잡도가 높고 느려진다.   
 
