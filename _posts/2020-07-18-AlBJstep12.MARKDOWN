@@ -73,8 +73,9 @@ toc_label: 목차
 ### - 9020 골드하브의 추측 문제
 ![image](https://user-images.githubusercontent.com/66898243/119229424-fc53e100-bb52-11eb-9d79-7baae44845fa.png)
 
-#### 9020 풀이 코드
->  
+#### 9020 풀이 코드1 (21/05/24)
+>  ![image](https://user-images.githubusercontent.com/66898243/119365660-1fb19400-bceb-11eb-9056-98b8a82246a1.png)
+
 
 ***
 ### - 1085 직사각형에서 탈출 문제 
