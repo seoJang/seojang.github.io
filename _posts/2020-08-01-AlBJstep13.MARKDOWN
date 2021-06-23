@@ -48,8 +48,8 @@ toc_label: 목차
 ### - 11729 하노이 탑 이동순서
 ![image](https://user-images.githubusercontent.com/66898243/88814456-1653ba00-d1f5-11ea-955c-b6b59a9f9f6c.png)
 
-#### 코드1
-> 
+#### 코드 508ms (21/06/23)
+> ![image](https://user-images.githubusercontent.com/66898243/123115493-1c8cfd80-d47b-11eb-9488-15e7c9d7bdbe.png)
 
 
 #### - 참고 목록
