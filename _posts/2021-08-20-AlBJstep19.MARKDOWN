@@ -41,7 +41,9 @@ toc_label: 목차
 #### 1934 풀이 코드 340ms  (21/08/25)
 >  ![image](https://user-images.githubusercontent.com/66898243/130787091-78c186f6-d1ac-4d2c-972f-1b0bca2f62c0.png)
 
- 
+#### 1934 풀이 코드 188ms  (21/08/26)
+>  ![image](https://user-images.githubusercontent.com/66898243/130934258-62cdcd8e-da0f-40aa-ab82-cdaab355126d.png)
+
 ### - 2981 검문
 
 #### 2981 풀이 코드
