@@ -56,6 +56,9 @@ toc_label: 목차
 #### 10866 풀이 코드	168ms (21/11/20) 
 >   ![image](https://user-images.githubusercontent.com/66898243/142728872-e7fe6f03-3fc9-48fc-9808-15237c9cce83.png)
 
+#### 10866 풀이 코드2	236ms (21/11/21) 
+>   ![image](https://user-images.githubusercontent.com/66898243/142765975-2958cef2-eda1-4974-b971-ba812b639193.png)
+>   ![image](https://user-images.githubusercontent.com/66898243/142766028-306d196e-2fc1-4511-b147-20488338c80d.png)
 
 ### - 1021 회전하는 큐
 
