@@ -61,9 +61,11 @@ toc_label: 목차
 >   ![image](https://user-images.githubusercontent.com/66898243/142766028-306d196e-2fc1-4511-b147-20488338c80d.png)
 
 ### - 1021 회전하는 큐
+![image](https://user-images.githubusercontent.com/66898243/142869665-f43743b7-a918-4513-ba02-c2a8bc067032.png)
 
-#### 1021 풀이 코드
->
+#### 1021 풀이 코드 132ms (21/11/22) 
+> ![image](https://user-images.githubusercontent.com/66898243/142869706-cb2508ca-129e-473f-a098-c1b7af446d3d.png)
+
 
 ### - 5430 AC
 
